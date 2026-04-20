@@ -8,12 +8,12 @@
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
 :root{
-  --black:#050505;--dark:#0a0a0a;--darker:#111;--white:#fff;
-  --off:#e4e4e4;--mid:#777;--dim:#444;--rule:rgba(255,255,255,0.07);
+  --black:#181818;--dark:#1e1e1e;--darker:#232323;--white:#fff;
+  --off:#ebebeb;--mid:#909090;--dim:#444;--rule:rgba(255,255,255,0.1);
   --ease:cubic-bezier(.16,1,.3,1);
 }
 html{scroll-behavior:smooth;}
-body{font-family:'Inter',sans-serif;background:var(--black);color:var(--off);overflow-x:hidden;}
+body{font-family:'Inter',sans-serif;background:var(--black);color:var(--off);overflow-x:hidden;width:100%;max-width:100vw;}
 
 nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:center;justify-content:space-between;padding:0 60px;height:70px;transition:background .4s,border-color .4s;border-bottom:1px solid transparent;}
 nav.scrolled{background:rgba(5,5,5,.94);backdrop-filter:blur(16px);border-color:var(--rule);}
@@ -65,7 +65,7 @@ section{padding:120px 60px;}
 .svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:5px;overflow:hidden;}
 .svc-card{background:var(--darker);padding:46px 42px;position:relative;transition:background .25s;}
 .svc-card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:rgba(255,255,255,.15);}
-.svc-card:hover{background:#121212;}
+.svc-card:hover{background:#282828;}
 .svc-num{font-family:'Syne',sans-serif;font-size:62px;font-weight:800;color:rgba(255,255,255,.05);line-height:1;margin-bottom:14px;}
 .svc-badge{font-family:'Syne',sans-serif;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#000;background:#fff;padding:4px 11px;border-radius:2px;display:inline-block;margin-bottom:12px;}
 .svc-title{font-family:'Syne',sans-serif;font-size:21px;font-weight:700;color:#fff;margin-bottom:12px;}
@@ -105,7 +105,7 @@ section{padding:120px 60px;}
 .fg input,.fg select,.fg textarea{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:3px;padding:13px 14px;font-family:'Inter',sans-serif;font-size:14px;font-weight:300;color:#fff;outline:none;width:100%;transition:border-color .2s;}
 .fg input::placeholder,.fg textarea::placeholder{color:rgba(255,255,255,.18);}
 .fg input:focus,.fg select:focus,.fg textarea:focus{border-color:rgba(255,255,255,.4);}
-.fg select option{background:#111;color:#fff;}
+.fg select option{background:#242424;color:#fff;}
 .fg textarea{resize:vertical;min-height:108px;}
 .form-btn{width:100%;margin-top:4px;background:#fff;color:#000;border:none;cursor:pointer;font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:17px;border-radius:3px;transition:opacity .2s;}
 .form-btn:hover{opacity:.88;}
@@ -147,10 +147,10 @@ footer{background:var(--black);padding:60px 60px 28px;border-top:1px solid var(-
 
   section{padding:60px 20px;text-align:center;}
   #hero{padding:88px 20px 100px;min-height:auto;text-align:center;}
-  .hero-content{max-width:100%;}
+  .hero-content{max-width:100%;width:100%;}
   .hero-tag{justify-content:center;font-size:9px;letter-spacing:2px;margin-bottom:18px;}
   .hero-tag::before{display:none;}
-  .hero-h1{font-size:clamp(34px,9vw,48px);margin-bottom:16px;}
+  .hero-h1{font-size:clamp(16px,4.8vw,28px);margin-bottom:16px;white-space:nowrap;}
   .hero-sub{font-size:14px;margin-bottom:32px;max-width:100%;}
   .hero-btns{flex-direction:column;gap:10px;align-items:center;}
   .btn-w,.btn-o{width:100%;max-width:280px;justify-content:center;padding:14px 20px;}
@@ -203,7 +203,7 @@ footer{background:var(--black);padding:60px 60px 28px;border-top:1px solid var(-
   .nav-links li:not(:last-child){display:none;}
   section{padding:52px 16px;}
   #hero{padding:80px 16px 90px;}
-  .hero-h1{font-size:clamp(30px,10vw,40px);}
+  .hero-h1{font-size:clamp(15px,4.2vw,22px);white-space:nowrap;}
   .sec-h,.proc-h{font-size:clamp(24px,8vw,32px);}
   #stats{grid-template-columns:1fr 1fr;}
   .svc-card{padding:24px 18px;}
@@ -299,6 +299,121 @@ footer{background:var(--black);padding:60px 60px 28px;border-top:1px solid var(-
     </div>
   </div>
 </section>
+
+<!-- HEXAGON SECTION -->
+<section id="hexagon-section" style="background:#212121;padding:120px 60px;text-align:center;">
+  <div class="lbl" style="justify-content:center;margin-bottom:16px;"><span style="display:block;width:24px;height:1px;background:#777;margin-right:12px;"></span>Our Foundation</div>
+  <h2 class="sec-h" style="text-align:center;margin-bottom:12px;">6 Sides. One Vision.</h2>
+  <p style="font-size:15px;font-weight:300;color:#777;max-width:480px;margin:0 auto 72px;line-height:1.8;">Like the hexagon — the most efficient shape in nature — every side of Hexaco Global is connected, strong, and purposeful.</p>
+
+  <div class="hex-grid">
+    <div class="hex-row hex-row-top">
+      <div class="hex-wrap">
+        <div class="hexagon">
+          <div class="hex-inner">
+            <div class="hex-num">01</div>
+            <div class="hex-title">Global Trade Network</div>
+            <div class="hex-desc">Connecting suppliers to verified international buyers across borders</div>
+          </div>
+        </div>
+      </div>
+      <div class="hex-wrap">
+        <div class="hexagon">
+          <div class="hex-inner">
+            <div class="hex-num">02</div>
+            <div class="hex-title">Buyer Sourcing</div>
+            <div class="hex-desc">We find the right buyers for your products in the right markets</div>
+          </div>
+        </div>
+      </div>
+      <div class="hex-wrap">
+        <div class="hexagon">
+          <div class="hex-inner">
+            <div class="hex-num">03</div>
+            <div class="hex-title">Digital Growth</div>
+            <div class="hex-desc">Websites, SEO &amp; social media that make businesses globally visible</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hex-row hex-row-bottom">
+      <div class="hex-wrap">
+        <div class="hexagon">
+          <div class="hex-inner">
+            <div class="hex-num">04</div>
+            <div class="hex-title">Deal Negotiation</div>
+            <div class="hex-desc">Expert negotiation to close deals that work for every party</div>
+          </div>
+        </div>
+      </div>
+      <div class="hex-wrap">
+        <div class="hexagon">
+          <div class="hex-inner">
+            <div class="hex-num">05</div>
+            <div class="hex-title">Brand Building</div>
+            <div class="hex-desc">Crafting identities that command trust in global markets</div>
+          </div>
+        </div>
+      </div>
+      <div class="hex-wrap">
+        <div class="hexagon">
+          <div class="hex-inner">
+            <div class="hex-num">06</div>
+            <div class="hex-title">End-to-End Support</div>
+            <div class="hex-desc">From first contact to final delivery — we are with you every step</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.hex-grid{display:flex;flex-direction:column;align-items:center;gap:0;max-width:860px;margin:0 auto;}
+.hex-row{display:flex;justify-content:center;gap:6px;}
+.hex-row-bottom{margin-top:-32px;}
+.hex-wrap{width:220px;display:flex;justify-content:center;}
+.hexagon{
+  width:200px;height:220px;
+  clip-path:polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%);
+  background:#242424;
+  display:flex;align-items:center;justify-content:center;
+  position:relative;transition:background .3s;cursor:default;
+}
+.hexagon::before{
+  content:'';position:absolute;inset:2px;
+  clip-path:polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%);
+  background:#181818;
+  transition:background .3s;
+}
+.hexagon:hover{background:#fff;}
+.hexagon:hover::before{background:#fff;}
+.hexagon:hover .hex-num{color:rgba(0,0,0,.15);}
+.hexagon:hover .hex-title{color:#000;}
+.hexagon:hover .hex-desc{color:rgba(0,0,0,.55);}
+.hex-inner{position:relative;z-index:1;padding:20px 18px;text-align:center;}
+.hex-num{font-family:'Syne',sans-serif;font-size:28px;font-weight:800;color:rgba(255,255,255,.06);line-height:1;margin-bottom:8px;transition:color .3s;}
+.hex-title{font-family:'Syne',sans-serif;font-size:13px;font-weight:700;color:#fff;line-height:1.3;margin-bottom:8px;transition:color .3s;}
+.hex-desc{font-size:11px;font-weight:300;line-height:1.6;color:#666;transition:color .3s;}
+
+@media(max-width:900px){
+  #hexagon-section{padding:64px 20px;}
+  .hex-grid{max-width:100%;}
+  .hex-row{gap:4px;flex-wrap:wrap;justify-content:center;}
+  .hex-row-bottom{margin-top:-20px;}
+  .hex-wrap{width:160px;}
+  .hexagon{width:148px;height:162px;}
+  .hex-num{font-size:22px;}
+  .hex-title{font-size:11px;}
+  .hex-desc{font-size:10px;}
+}
+@media(max-width:480px){
+  .hex-row{flex-direction:column;align-items:center;gap:8px;}
+  .hex-row-bottom{margin-top:8px;}
+  .hex-wrap{width:200px;}
+  .hexagon{width:200px;height:220px;}
+}
+</style>
 
 <section id="process">
   <h2 class="proc-h rev">How We Work</h2>
